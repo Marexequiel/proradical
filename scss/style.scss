@@ -1,0 +1,44 @@
+@import "./globals/reset";
+@import "./utilities/variables";
+@import "./utilities/mixin";
+
+
+// header
+
+.navbar{
+    font-family: $font-family-principal;
+
+}
+
+.logo-header {
+        width: 80px;
+    }
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: 1rem;
+    color: black;
+}
+.navbar-nav{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    gap: 1.5rem;
+    .nav__link{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+// carousel section
+
+.carousel-item{
+    position: relative;
+    .carousel__link{
+    position: absolute;
+    top: 450px;
+    left: 680px;
+}
+}
