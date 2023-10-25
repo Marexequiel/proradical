@@ -8,29 +8,152 @@ html {
 
 .navbar {
   font-family: "Montserrat", sans-serif; }
-
-.logo-header {
-  width: 80px; }
-
-.navbar-brand {
-  font-size: 1.5rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  margin-left: 1rem;
-  color: black; }
-
-.navbar-nav {
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  font-weight: 600;
-  gap: 1.5rem; }
-  .navbar-nav .nav__link {
-    text-decoration: none;
+  .navbar .logo-header {
+    width: 80px; }
+  .navbar .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: 1rem;
     color: black; }
+  .navbar .navbar-nav {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    gap: 1.5rem; }
+    .navbar .navbar-nav .nav__link {
+      text-decoration: none;
+      color: black; }
 
-.carousel-item {
-  position: relative; }
-  .carousel-item .carousel__link {
-    position: absolute;
-    top: 450px;
-    left: 680px; }
+.banner {
+  width: 600px;
+  width: 100%; }
+
+.section-lanzamientos {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 5rem; }
+  .section-lanzamientos .card {
+    box-shadow: 0px 0px 10px 1px #727272;
+    border: none;
+    transition: 0.8s; }
+  .section-lanzamientos .card:hover {
+    transform: scale(1.2); }
+  .section-lanzamientos .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    padding: 0; }
+    .section-lanzamientos .card-body .card-title {
+      font-size: 2rem;
+      font-weight: 600;
+      text-align: center;
+      margin: 0; }
+    .section-lanzamientos .card-body .card-buy {
+      text-align: center;
+      margin-top: 3px; }
+      .section-lanzamientos .card-body .card-buy .card-text {
+        font-size: 2.5rem;
+        margin: 0; }
+      .section-lanzamientos .card-body .card-buy .btn {
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-bottom: 1rem;
+        background-color: black;
+        color: white;
+        font-weight: 700;
+        font-size: 1.5rem; }
+
+.section-categorias {
+  margin-top: 5rem; }
+  .section-categorias .carousel-item {
+    position: relative;
+    height: 600px; }
+    .section-categorias .carousel-item .carousel__link {
+      position: absolute;
+      top: 290px;
+      left: 585px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: "Montserrat", sans-serif;
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: white; }
+
+.beneficios {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600; }
+  .beneficios .card-body {
+    font-size: 1.5rem; }
+  .beneficios .card-link:hover {
+    transform: scale(1.2); }
+
+.section-dest {
+  margin-top: 2rem; }
+  .section-dest .art-destacados {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase; }
+  .section-dest .btn-dest {
+    border-radius: 30px;
+    font-weight: 600; }
+
+/* section-categorias */
+.section-cat {
+  margin-top: 5rem; }
+  .section-cat .img-2, .section-cat .img-1 {
+    height: 350px;
+    width: 100%;
+    object-fit: cover; }
+  .section-cat .img-1 {
+    height: 700px; }
+  .section-cat .d-1 {
+    position: relative;
+    padding: 0; }
+    .section-cat .d-1 .bt-1 {
+      position: absolute;
+      bottom: 2%;
+      left: 6%; }
+  .section-cat .d-2 {
+    position: relative;
+    padding: 0; }
+    .section-cat .d-2 .bt-2 {
+      position: absolute;
+      bottom: 52%;
+      left: 6%; }
+  .section-cat .d-3 {
+    position: relative; }
+    .section-cat .d-3 .bt-3 {
+      position: absolute;
+      bottom: 4%;
+      left: 6%; }
+  .section-cat .categoria__link {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600; }
+
+.footer {
+  background-color: black;
+  margin-top: 3rem; }
+  .footer__title, .footer__p, .footer .contacto__title {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    font-weight: 600; }
+  .footer__p {
+    font-weight: 500; }
+  .footer .categorias__title {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    font-weight: 600; }
+  .footer .categorias__link, .footer .contacto__p {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase; }
+  .footer .contacto__p {
+    text-transform: lowercase; }
