@@ -1,0 +1,193 @@
+@import "./globals/reset";
+@import "./utilities/variables";
+@import "./utilities/mixin";
+
+
+// header
+
+.navbar {
+    font-family: $font-family-principal;
+
+    .logo-header {
+        width: 80px;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-left: 1rem;
+        color: black;
+    }
+
+    .navbar-nav {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        gap: 1.5rem;
+
+        .nav__link {
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+// carousel 
+
+.banner {
+    width: 600px;
+    width: 100%;
+}
+
+// section nuevos lanzamientos
+
+.section-lanzamientos {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 5rem;
+    @include card;
+
+}
+
+// section categorias
+
+.section-categorias {
+    margin-top: 5rem;
+
+    .carousel-item {
+        position: relative;
+        height: 600px;
+
+        .carousel__link {
+            position: absolute;
+            top: 290px;
+            left: 585px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: $font-family-principal;
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: white;
+        }
+    }
+}
+
+// section beneficios
+
+.beneficios {
+    font-family: $font-family-principal;
+    font-weight: 600;
+    .card-body{
+        font-size: 1.5rem;
+    }
+
+    .card-link:hover {
+        transform: scale(1.2);
+    }
+}
+
+.section-dest {
+    margin-top: 2rem;
+    .art-destacados {
+        font-family: $font-family-principal;
+        text-transform: uppercase;
+    }
+    .btn-dest {
+        border-radius: 30px;
+        font-weight: 600;
+    }
+}
+
+/* section-categorias */
+.section-cat {
+    margin-top: 5rem;
+    .img-2 {
+        height: 350px;
+        width: 100%;
+        object-fit: cover;
+
+    }
+    .img-1 {
+        @extend .img-2;
+        height: 700px;
+    }
+    .d-1 {
+        position: relative;
+        padding: 0;
+        .bt-1 {
+            position: absolute;
+            bottom: 2%;
+            left: 6%;
+        }
+    }
+    .d-2 {
+        position: relative;
+        padding: 0;
+
+        .bt-2 {
+            position: absolute;
+            bottom: 52%;
+            left: 6%;
+        }
+    }
+
+    .d-3 {
+        position: relative;
+
+        .bt-3 {
+            position: absolute;
+            bottom: 4%;
+            left: 6%;
+        }
+    }
+    .categoria__link{
+        text-decoration: none;
+        font-family: $font-family-principal;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 600;
+    }
+    }
+
+
+// footer
+
+.footer {
+    background-color: black;
+    margin-top: 3rem;
+
+    &__title {
+        font-family: $font-family-principal;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    &__p {
+        @extend .footer__title;
+        font-weight: 500;
+    }
+
+    .categorias__title {
+        font-family: $font-family-principal;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .categorias__link {
+        text-decoration: none;
+        font-family: $font-family-principal;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    .contacto__title {
+        @extend .footer__title;
+    }
+
+    .contacto__p {
+        @extend .categorias__link;
+        text-transform: lowercase;
+    }
+}
