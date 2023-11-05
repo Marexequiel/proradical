@@ -6,24 +6,21 @@
 html {
   font-size: 62.5%; }
 
+.header__logo {
+  width: 100px; }
+
 .navbar {
-  font-family: "Montserrat", sans-serif; }
-  .navbar .logo-header {
-    width: 80px; }
-  .navbar .navbar-brand {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase; }
+  .navbar .nav__name {
     font-size: 1.5rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-left: 1rem;
-    color: black; }
-  .navbar .navbar-nav {
+    font-weight: 600; }
+  .navbar .header__nav {
+    display: flex;
+    justify-content: space-between; }
+  .navbar .nav-link {
     font-size: 1.5rem;
-    text-transform: uppercase;
-    font-weight: 600;
-    gap: 1.5rem; }
-    .navbar .navbar-nav .nav__link {
-      text-decoration: none;
-      color: black; }
+    font-weight: 600; }
 
 .banner {
   width: 600px;
@@ -104,6 +101,8 @@ html {
 /* section-categorias */
 .section-cat {
   margin-top: 5rem; }
+  .section-cat .div__reme__gorr {
+    margin: 0; }
   .section-cat .img-2, .section-cat .img-1 {
     height: 350px;
     width: 100%;
@@ -136,6 +135,9 @@ html {
     text-transform: uppercase;
     color: white;
     font-weight: 600; }
+
+.div__pagos {
+  width: 100%; }
 
 .footer {
   background-color: black;

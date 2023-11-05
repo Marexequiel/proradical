@@ -18,12 +18,45 @@
 
     <!-- header nav -->
 
-    <nav class="navbar navbar-expand-lg p-3">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <div>
-                <img class="logo-header" src="./img/logo-negro.png" alt="">
+            <img class="header__logo" src="./img/logo-negro.png" alt="">
+            <a class="navbar-brand" href="#">radical waves</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse header__nav" id="navbarNav">
+                <ul class="navbar-nav nav__ul1">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                </ul>
+                
             </div>
-            <a class="navbar-brand align-items-center d-sm-none d-md-block" href="#">radical waves</a>
+        </div>
+    </nav>
+
+    <!-- <nav class="navbar navbar-expand-lg p-3">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-sm-12">
+                    <img class="logo-header" src="./img/logo-negro.png" alt="">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="d-sm-none d-md-none">
+                    <a class="navbar-brand align-items-center d-sm-none d-md-block" href="#">radical waves</a>
+                </div>
+            </div>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -58,7 +91,7 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> -->
 
     <!-- carousel -->
 
@@ -170,19 +203,19 @@
             <article class="row categorias__article">
                 <div class="col-sm-12 col-md-6 d-1">
                     <img src="./img/hoodiecat.jpg" alt="buzo" class="rounded-end img-1 p-1">
-                    <div class="d-grid gap-2 col-6 mx-auto bt-1">
+                    <div class="bt-1">
                         <a class="categoria__link" href="./pages/hoodies.html">hoodies</a>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 d-2 align-items-center">
+                <div class="col-sm-12 col-md-6 d-2 align-items-center div__reme__gorr">
                     <img src="./img/remerascat.jpg" alt="remera" class="rounded-start img-2 p-1">
-                    <div class="d-grid col-6 mx-auto bt-2">
+                    <div class="bt-2">
                         <a class="categoria__link" href="./pages/remeras.html">remeras</a>
                     </div>
                     <div class="row">
                         <div class="col-sm-12 col-md-12 d-3">
                             <img src="./img/gorroscat.jpg" alt="gorro lana" class=" rounded-start img-2 p-1">
-                            <div class="d-grid col-6 mx-auto bt-3">
+                            <div class="bt-3">
                                 <a class="categoria__link" href="./pages/accesorios.html">accesorios</a>
                             </div>
                         </div>
@@ -194,7 +227,7 @@
         <!-- pagos-envios-devoluciones -->
 
         <section class=" mt-5 mb-5">
-            <div class="row text-center fs-2 text-uppercase beneficios">
+            <div class="row text-center fs-2 text-uppercase beneficios div__pagos">
                 <div class="card col-sm-12 col-md-4 align-items-center">
                     <div class="card-body">
                         <a href="#"

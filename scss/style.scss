@@ -5,33 +5,36 @@
 
 // header
 
+// logo
+.header__logo {
+    width: 100px;
+}
+
+// navbar
+
 .navbar {
     font-family: $font-family-principal;
+    text-transform: uppercase;
 
-    .logo-header {
-        width: 80px;
-    }
 
-    .navbar-brand {
+    .nav__name {
         font-size: 1.5rem;
         font-weight: 600;
-        text-transform: uppercase;
-        margin-left: 1rem;
-        color: black;
     }
 
-    .navbar-nav {
+    .header__nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-link {
         font-size: 1.5rem;
-        text-transform: uppercase;
         font-weight: 600;
-        gap: 1.5rem;
-        
-
-        .nav__link {
-            text-decoration: none;
-            color: black;
-        }
     }
+
+    // .nav__redes{
+    //     margin: 0;
+    // }
 }
 
 // carousel 
@@ -79,7 +82,8 @@
 .beneficios {
     font-family: $font-family-principal;
     font-weight: 600;
-    .card-body{
+
+    .card-body {
         font-size: 1.5rem;
     }
 
@@ -90,10 +94,12 @@
 
 .section-dest {
     margin-top: 2rem;
+
     .art-destacados {
         font-family: $font-family-principal;
         text-transform: uppercase;
     }
+
     .btn-dest {
         border-radius: 30px;
         font-weight: 600;
@@ -103,25 +109,34 @@
 /* section-categorias */
 .section-cat {
     margin-top: 5rem;
+
+    .div__reme__gorr {
+        margin: 0;
+    }
+
     .img-2 {
         height: 350px;
         width: 100%;
         object-fit: cover;
 
     }
+
     .img-1 {
         @extend .img-2;
         height: 700px;
     }
+
     .d-1 {
         position: relative;
         padding: 0;
+
         .bt-1 {
             position: absolute;
             bottom: 2%;
             left: 6%;
         }
     }
+
     .d-2 {
         position: relative;
         padding: 0;
@@ -142,14 +157,21 @@
             left: 6%;
         }
     }
-    .categoria__link{
+
+    .categoria__link {
         text-decoration: none;
         font-family: $font-family-principal;
         text-transform: uppercase;
         color: white;
         font-weight: 600;
     }
-    }
+}
+
+// pagos,envios,devoluciones
+
+.div__pagos {
+    width: 100%;
+}
 
 
 // footer
